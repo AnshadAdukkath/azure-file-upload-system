@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a6b3db7b-b65f-450d-b9c9-304a6aa27d95/resourceGroups/cloud-project-rg1/providers/Microsoft.Web/sites/fileupload-anshad123",
+    "appService.deploySubpath": "."
+}

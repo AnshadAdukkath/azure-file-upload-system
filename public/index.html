@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure and fast cloud file storage. Upload your documents seamlessly to Azure.">
+    <title>CloudBox | Secure File Upload</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="main-container">
+        <div class="card">
+            <div class="logo-container">
+                <img src="cloud_storage_logo.png" alt="CloudBox Logo">
+            </div>
+            
+            <h1>CloudBox</h1>
+            <p class="subtitle">Securely transfer your files to the cloud</p>
+
+            <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                <div class="upload-zone" id="upload-zone">
+                    <span class="upload-icon">☁️</span>
+                    <p class="upload-text">Click to upload or drag & drop</p>
+                    <p class="file-info">Maximum file size: 50MB</p>
+                </div>
+
+                <div class="selected-file-preview" id="file-preview">
+                    <span class="file-name" id="file-name">No file selected</span>
+                    <span class="remove-file" id="remove-file">✕</span>
+                </div>
+
+                <input type="file" name="file" id="file-input" required>
+                
+                <button type="submit" class="btn-upload">
+                    Upload to Cloud
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
